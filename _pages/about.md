@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Multimedia Data Analysis Lab</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: hwum-lake.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>School of Mathematical and Computer Sciences</p>
