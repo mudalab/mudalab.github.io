@@ -9,4 +9,4 @@ Congratulations to Jia Yap for winning the Best Presentation (Poster) Award at t
 
 ***
 
-![Awardees Group Photo](assets/img/pgr-conf.jpg)
+![Awardees Group Photo](/assets/img/pgr-conf.jpg)
