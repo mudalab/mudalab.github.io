@@ -2,9 +2,9 @@
 layout: page
 title: people
 permalink: /people/
-description:
+description: These are the important people affiliated with the lab.
 nav: true
-display_categories: [current, alumni]
+display_categories: [current, alumni, collaborators]
 horizontal: false
 ---
 <div class="projects">
