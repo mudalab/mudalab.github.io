@@ -216,18 +216,19 @@
               style="position:relative; top:-2px; display:inline "></span>
           {%- endif %}
           {%- if site.badges.plumx_badge %}
-            <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
-            data-hide-when-empty="true" data-size="small" data-popup="right" style="display:inline;"></a>
+            <span style="display:inline"><a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
+            data-hide-when-empty="true" data-size="small" data-popup="right" style="display:inline;"></a></span>
           {%- endif %}
-          </div>
-          {% if site.badges %}
-          <div class="badges">
-            {%- if site.badges.altmetric_badge %}
-            <span class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
+          {%- if site.badges.altmetric_badge %}
+            <span style="display:inline" class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
               data-doi="{{ entry.doi }}" {% elsif entry.altmetric %} data-altmetric-id="{{ entry.altmetric }}" {% elsif
               entry.pmid %} data-pmid="{{ entry.pmid }}" {% elsif entry.isbn %} data-isbn="{{ entry.isbn }}" {% endif
               %}></span>
             {%- endif %}
+          </div>
+          {% if site.badges %}
+          <div class="badges">
+            
           </div>
           {%- endif %}
 
