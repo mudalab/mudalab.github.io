@@ -142,7 +142,7 @@
           {% if entry.type == "article" -%}
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif proceedings contains entry.type -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.booktitle}}</em> {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
@@ -213,7 +213,7 @@
           {% if site.badges %}
           <div class="badges">
             {%- if site.badges.altmetric_badge %}
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
+            <span class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
               data-doi="{{ entry.doi }}" {% elsif entry.altmetric %} data-altmetric-id="{{ entry.altmetric }}" {% elsif
               entry.pmid %} data-pmid="{{ entry.pmid }}" {% elsif entry.isbn %} data-isbn="{{ entry.isbn }}" {% endif
               %}></span>
@@ -225,8 +225,8 @@
               style="margin-bottom: 2px;"></span>
             {%- endif %}
             {%- if site.badges.plumx_badge %}
-            <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
-              data-hide-when-empty="true" data-badge="true" data-size="medium" data-popup="right" style="margin-bottom: 2px;"></a>
+            <span><a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
+              data-hide-when-empty="true" data-size="medium" data-popup="right" style="margin-bottom: 2px;"></a></span>
             {%- endif %}
           </div>
           {%- endif %}
