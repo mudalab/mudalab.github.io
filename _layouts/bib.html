@@ -213,8 +213,12 @@
             <span class="__dimensions_badge_embed__" {% if entry.doi %} data-doi="{{ entry.doi }}" {% else if entry.pmid %}
               data-pmid="{{ entry.pmid }}" {% else %} data-id="{{ entry.dimensions }}" {% endif %}
               data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"
-              style="margin-bottom: 2px;"></span>
-            {%- endif %}
+              style="position:relative; top:-2px; display:inline "></span>
+          {%- endif %}
+          {%- if site.badges.plumx_badge %}
+            <span><a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
+            data-hide-when-empty="true" data-size="small" data-popup="right" style="display:inline;"></a></span>
+          {%- endif %}
           </div>
           {% if site.badges %}
           <div class="badges">
@@ -223,10 +227,6 @@
               data-doi="{{ entry.doi }}" {% elsif entry.altmetric %} data-altmetric-id="{{ entry.altmetric }}" {% elsif
               entry.pmid %} data-pmid="{{ entry.pmid }}" {% elsif entry.isbn %} data-isbn="{{ entry.isbn }}" {% endif
               %}></span>
-            {%- endif %}
-            {%- if site.badges.plumx_badge %}
-            <span><a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
-              data-hide-when-empty="true" data-size="medium" data-popup="right" style="margin-bottom: 2px;"></a></span>
             {%- endif %}
           </div>
           {%- endif %}
