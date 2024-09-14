@@ -209,25 +209,24 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
-          {%- if site.badges.dimensions_badge %}
-            <span class="__dimensions_badge_embed__" {% if entry.doi %} data-doi="{{ entry.doi }}" {% else if entry.pmid %}
-              data-pmid="{{ entry.pmid }}" {% else %} data-id="{{ entry.dimensions }}" {% endif %}
-              data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"
-              style="position:relative; top:-2px; display:inline "></span>
-          {%- endif %}
           </div>
           {% if site.badges %}
           <div class="badges">
             {%- if site.badges.altmetric_badge %}
-            <div class="altmetric">
-            <span class="altmetric-embed" data-badge-type="donut" data-hide-no-mentions="true" data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-badge-popover="right" {% if entry.eprint %} data-arxiv-id="{{ entry.eprint }}" {% elsif entry.doi %}
               data-doi="{{ entry.doi }}" {% elsif entry.altmetric %} data-altmetric-id="{{ entry.altmetric }}" {% elsif
               entry.pmid %} data-pmid="{{ entry.pmid }}" {% elsif entry.isbn %} data-isbn="{{ entry.isbn }}" {% endif
-              %}></span></div>
+              %}></span>
+            {%- endif %}
+            {%- if site.badges.dimensions_badge %}
+            <span class="__dimensions_badge_embed__" {% if entry.doi %} data-doi="{{ entry.doi }}" {% else if entry.pmid %}
+              data-pmid="{{ entry.pmid }}" {% else %} data-id="{{ entry.dimensions }}" {% endif %}
+              data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"
+              style="margin-bottom: 2px;"></span>
             {%- endif %}
             {%- if site.badges.plumx_badge %}
             <a class="plumx-plum-print-popup" href="https://plu.mx/plum/a/?doi={{ entry.doi }}"
-            data-hide-when-empty="true" data-size="medium" data-popup="right" style="display:inline;"></a>
+              data-hide-when-empty="true" data-size="small" data-popup="right" style="margin-bottom: 2px;"></a>
             {%- endif %}
           </div>
           {%- endif %}
