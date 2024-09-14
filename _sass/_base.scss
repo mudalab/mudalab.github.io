@@ -572,6 +572,10 @@ footer.sticky-bottom {
             text-decoration: underline;
           }
         }
+
+        .PlumX-Popup, .altmetric {
+          display: table-cell;
+        }
       }
 
       .hidden {
