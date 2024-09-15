@@ -6,4 +6,5 @@ img: /assets/img/jiayap.jpg
 importance: 2
 category: current
 redirect: https://johnsee.net/mudalab 
+interests: Engagement prediction, human-robot interaction
 ---
