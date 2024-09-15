@@ -103,6 +103,23 @@
   pdf = "https://www.techrxiv.org/articles/preprint/NeSVoR_Implicit_Neural_Representation_for_Slice-to-Volume_Reconstruction_in_MRI/21398868"
 }
 
+@article{qian2024controllable,
+  title={Controllable augmentations for video representation learning},
+  author={Qian, Rui and Lin, Weiyao and See, John and Li, Dian},
+  journal={Visual Intelligence},
+  volume={2},
+  number={1},
+  pages={1},
+  year={2024},
+  publisher={Springer},
+  abbr = "VisIntell",
+  doi = {10.1007/s44267-023-00034-7},
+  url = "https://link.springer.com/article/10.1007/s44267-023-00034-7",
+  abstract = {This paper focuses on self-supervised video representation learning. Most existing approaches follow the contrastive learning pipeline to construct positive and negative pairs by sampling different clips. However, this formulation tends to bias the static background and has difficulty establishing global temporal structures. The major reason is that the positive pairs, i.e., different clips sampled from the same video, have limited temporal receptive fields, and usually share similar backgrounds but differ in motions. To address these problems, we propose a framework to jointly utilize local clips and global videos to learn from detailed region-level correspondence as well as general long-term temporal relations. Based on a set of designed controllable augmentations, we implement accurate appearance and motion pattern alignment through soft spatio-temporal region contrast. Our formulation avoids the low-level redundancy shortcut with an adversarial mutual information minimization objective to improve the generalization ability. Moreover, we introduce local-global temporal order dependency to further bridge the gap between clip-level and video-level representations for robust temporal modeling. Extensive experiments demonstrate that our framework is superior on three video benchmarks in action recognition and video retrieval, and captures more accurate temporal dynamics.},
+  preview = 'controllable-augs.jpg',
+  selected = {true}
+}
+
 @article{yang2023doing,
   author={Yang, Cong and Yang, Zhenyu and Ke, Yan and Chen, Tao and Grzegorzek, Marcin and See, John},
   journal={IEEE Transactions on Image Processing},
@@ -259,19 +276,3 @@
   selected = {true}
 }
 
-@article{qian2024controllable,
-  title={Controllable augmentations for video representation learning},
-  author={Qian, Rui and Lin, Weiyao and See, John and Li, Dian},
-  journal={Visual Intelligence},
-  volume={2},
-  number={1},
-  pages={1},
-  year={2024},
-  publisher={Springer},
-  abbr = "VisIntell",
-  doi = {10.1007/s44267-023-00034-7},
-  url = "https://link.springer.com/article/10.1007/s44267-023-00034-7",
-  abstract = {This paper focuses on self-supervised video representation learning. Most existing approaches follow the contrastive learning pipeline to construct positive and negative pairs by sampling different clips. However, this formulation tends to bias the static background and has difficulty establishing global temporal structures. The major reason is that the positive pairs, i.e., different clips sampled from the same video, have limited temporal receptive fields, and usually share similar backgrounds but differ in motions. To address these problems, we propose a framework to jointly utilize local clips and global videos to learn from detailed region-level correspondence as well as general long-term temporal relations. Based on a set of designed controllable augmentations, we implement accurate appearance and motion pattern alignment through soft spatio-temporal region contrast. Our formulation avoids the low-level redundancy shortcut with an adversarial mutual information minimization objective to improve the generalization ability. Moreover, we introduce local-global temporal order dependency to further bridge the gap between clip-level and video-level representations for robust temporal modeling. Extensive experiments demonstrate that our framework is superior on three video benchmarks in action recognition and video retrieval, and captures more accurate temporal dynamics.},
-  preview = 'controllable-augs.jpg',
-  selected = {true}
-}
