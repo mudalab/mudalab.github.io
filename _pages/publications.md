@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Ordered in reversed chronological order. For a longer list, please refer to <a href="https://scholar.google.com/citations?user=uH74dcgAAAAJ" target="_blank">here</a>.
+description: Ordered in reversed chronological order. For a longer list, please refer <a href="https://scholar.google.com/citations?user=uH74dcgAAAAJ" target="_blank">here</a>.
 years: [2024, 2023, 2022, 2021]
 nav: true
 nav_order: 1
