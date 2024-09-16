@@ -84,6 +84,16 @@
 
 % Muda Lab papers 
 
+@inproceedings{gohar2024optimizing,
+  title={Optimizing Wind Turbine Surface Defect Detection: A Rotated Bounding Box Approach},
+  author={Gohar, Imad and Halimi, Abderrahim and Kean, Yew Weng and See, John},
+  booktitle={32nd European Conference on Signal Processing (to appear)},
+  year={2024},
+  abstract = {Detecting surface defects on Wind Turbine Blades (WTBs) from remotely sensed images is a crucial step toward automated visual inspection. Typical object detection algorithms use standard bounding boxes to locate defects on WTBs. However, Oriented Bounding Boxes (OBBs) have been shown in cases of satellite imagery, to provide more precise localization of object regions and actual orientation. Existing WTB datasets do not depict defects using OBBs and this causes the lack of useful orientational information. In this paper, we consider OBBs for WTB surface defect detection through two publicly available datasets, introducing new annotations to the community. Baselines were constructed on state-of-the-art rotated object detectors, demonstrating considerable promise and known gaps that can be addressed in the future. We present a comprehensive analysis of their performances including ablation study and discussions on the importance of angular disparity between OBBs.},
+  pdf = "https://eurasip.org/Proceedings/Eusipco/Eusipco2024/pdfs/0000631.pdf",
+  preview = "rotatedbb-wtb.jpg"
+}
+
 @article{liong2024sfamnet,
   author={Liong, Gen-Bing and Liong, Sze-Teng and Chan, Chee Seng and See, John},
   journal={Neurocomputing}, 
@@ -119,6 +129,72 @@
   preview = "controllable-augs.jpg",
 }
 
+@article{lin2024scene,
+  title={Scene Graph Lossless Compression with Adaptive Prediction for Objects and Relations},
+  author={Lin, Weiyao and Zhang, Yufeng and Dai, Wenrui and Liu, Huabin and See, John and Xiong, Hongkai},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  volume={20},
+  number={7},
+  pages={1--23},
+  year={2024},
+  publisher={ACM New York, NY},
+  abbr={TOMM},
+  preview = "scene-graph.jpg",
+  abstract = {The scene graph is a novel data structure describing objects and their pairwise relationship within image scenes. As the size of scene graphs in vision and multimedia applications increases, the need for lossless storage and transmission of such data becomes more critical. However, the compression of scene graphs is less studied because of the complicated data structures involved and complex distributions. Existing solutions usually involve general-purpose compressors or graph structure compression methods, which are weak at reducing the redundancy in scene graph data. This article introduces a novel lossless compression framework with adaptive predictors for the joint compression of objects and relations in scene graph data. The proposed framework comprises a unified prior extractor and specialized element predictors to adapt to different data elements. Furthermore, to exploit the context information within and between graph elements, Graph Context Convolution is proposed to support different graph context modeling schemes for different graph elements. Finally, an overarching framework incorporates the learned distribution model to predict numerical data under complicated conditional constraints. Experiments conducted on labeled or generated scene graphs demonstrate the effectiveness of the proposed framework for scene graph lossless compression.},
+  doi = {10.1145/3649503},
+  url = {https://dl.acm.org/doi/full/10.1145/3649503}
+}
+
+@article{liu2024unified,
+  title={A Unified Framework for Jointly Compressing Visual and Semantic Data},
+  author={Liu, Shizhan and Lin, Weiyao and Chen, Yihang and Zhang, Yufeng and Dai, Wenrui and See, John and Xiong, Hong-Kai},
+  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+  volume={20},
+  number={7},
+  pages={1--24},
+  year={2024},
+  publisher={ACM New York, NY},
+  abbr = {TOMM},
+  doi = {10.1145/3654800},
+  abstract = {The rapid advancement of multimedia and imaging technologies has resulted in increasingly diverse visual and semantic data. A large range of applications such as remote-assisted driving requires the amalgamated storage and transmission of various visual and semantic data. However, existing works suffer from the limitation of insufficiently exploiting the redundancy between different types of data. In this article, we propose a unified framework to jointly compress a diverse spectrum of visual and semantic data, including images, point clouds, segmentation maps, object attributes, and relations. We develop a unifying process that embeds the representations of these data into a joint embedding graph according to their categories, which enables flexible handling of joint compression tasks for various visual and semantic data. To fully leverage the redundancy between different data types, we further introduce an embedding-based adaptive joint encoding process and a Semantic Adaptation Module to efficiently encode diverse data based on the learned embeddings in the joint embedding graph. Experiments on the Cityscapes, MSCOCO, and KITTI datasets demonstrate the superiority of our framework, highlighting promising steps toward scalable multimedia processing.},
+  preview = "unified-compression.jpg",
+  url = {https://dl.acm.org/doi/full/10.1145/3654800}
+}
+
+@article{liong2023spot,
+  title={Spot-then-recognize: A micro-expression analysis network for seamless evaluation of long videos},
+  author={Liong, Gen-Bing and See, John and Chan, Chee-Seng},
+  journal={Signal Processing: Image Communication},
+  volume={110},
+  pages={116875},
+  year={2023},
+  publisher={Elsevier},
+  abbr = {SPIC},
+  doi = {10.1016/j.image.2022.116875},
+  preview = "spot-then-recognize.jpg",
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S0923596522001540},
+  code = {https://github.com/genbing99/MEAN_Spot-then-recognize},
+  abstract = {Facial Micro-Expressions (MEs) reveal a person’s hidden emotions in high stake situations within a fraction of a second and at a low intensity. The broad range of potential real-world applications that can be applied has drawn considerable attention from researchers in recent years. However, both spotting and recognition tasks are often treated separately. In this paper, we present Micro-Expression Analysis Network (MEAN), a shallow multi-stream multi-output network architecture comprising of task-specific (spotting and recognition) networks that is designed to effectively learn a meaningful representation from both ME class labels and location-wise pseudo-labels. Notably, this is the first known work that addresses ME analysis on long videos using a deep learning approach, whereby ME spotting and recognition are performed sequentially in a two-step procedure: first spotting the ME intervals using the spotting network, and proceeding to predict their emotion classes using the recognition network. We report extensive benchmark results on the ME analysis task on both short video datasets (CASME II, SMIC-E-HS, SMIC-E-VIS, and SMIC-E-NIR), and long video datasets (CAS(ME)2 and SAMMLV); the latter in particular demonstrates the capability of the proposed approach under unconstrained settings. Besides the standard measures, we promote the usage of fairer metrics in evaluating the performance of a complete ME analysis system. We also provide visual explanations of where the network is “looking” and showcasing the effectiveness of inductive transfer applied during network training. An analysis is performed on the in-the-wild dataset (MEVIEW) to open up further research into real-world scenarios.},
+  selected = {true}
+}
+
+@article{too2023emostory,
+  title={EmoStory: Emotion Prediction and Mapping in Narrative Stories},
+  author={Too, Seng Wei and See, John and Quek, Albert and Goh, Hui Ngo},
+  journal={International Journal on Informatics Visualization},
+  volume={7},
+  number={3-2},
+  pages={2048--2055},
+  year={2023},
+  publisher={Politeknik Negeri Padang},
+  doi = {10.30630/joiv.7.3-2.2335},
+  abstract = {A well-designed story is built upon a sequence of plots and events. Each event has its purpose in piquing the audience's interest in the plot; thus, understanding the flow of emotions within the story is vital to its success. A story is usually built up through dramatic changes in emotion and mood to create resonance with the audience. The lack of research in this understudied field warrants exploring several aspects of the emotional analysis of stories. In this paper, we propose an encoder-decoder framework to perform sentence-level emotion recognition of narrative stories on both dimensional and categorical aspects, achieving MAE=0.0846 and 54% accuracy (8-class), respectively, on the EmoTales dataset and a reasonably good level of generalization to an untrained dataset. The first use of attention and multi-head attention mechanisms for emotion representation mapping (ERM) yields state-of-the-art performance in certain settings. We further present the preliminary idea of EmoStory, a concept that seamlessly predicts both dimensional and categorical space in an efficient manner, made possible with ERM. This methodology is useful in only one of the two aspects is available. In the future, these techniques could be extended to model the personality or emotional state of characters in stories, which could benefit the affective assessment of experiences and the creation of emotive avatars and virtual worlds.},
+  preview = "emostory.png",
+  abbr = {JOIV},
+  url = {https://joiv.org/index.php/joiv/article/view/2335},
+  pdf = {https://researchportal.hw.ac.uk/files/139343772/2335-5649-1-PB.pdf}
+}
+
 @article{yang2023doing,
   author={Yang, Cong and Yang, Zhenyu and Ke, Yan and Chen, Tao and Grzegorzek, Marcin and See, John},
   journal={IEEE Transactions on Image Processing},
@@ -150,7 +226,7 @@
   doi={10.3390/machines11100953},
   selected={true},
   code = "https://github.com/imadgohar/DTU-annotations",
-  preview = "slice-wtb.png",
+  preview = "slice-wtb.jpg",
   abstract = {The processing of aerial images taken by drones is a challenging task due to their high resolution and the presence of small objects. The scale of the objects varies diversely depending on the position of the drone, which can result in loss of information or increased difficulty in detecting small objects. To address this issue, images are either randomly cropped or divided into small patches before training and inference. This paper proposes a defect detection framework that harnesses the advantages of slice-aided inference for small and medium-size damage on the surface of wind turbine blades. This framework enables the comparison of different slicing strategies, including a conventional patch division strategy and a more recent slice-aided hyper-inference, on several state-of-the-art deep neural network baselines for the detection of surface defects in wind turbine blade images. Our experiments provide extensive empirical results, highlighting the benefits of using the slice-aided strategy and the significant improvements made by these networks on an ultra high-resolution drone image dataset.},
   url = "https://www.mdpi.com/2075-1702/11/10/953",
   abbr = "Machines",
@@ -175,6 +251,48 @@
   url = "https://ieeexplore.ieee.org/abstract/document/9931532",
   abbr = "TITS",
   pdf = "https://pure.hw.ac.uk/ws/files/67344144/FatigueView_A_Multi_Camera_Video_Dataset_for_Vision_Based_Drowsiness_Detection.pdf"
+}
+
+@inproceedings{ban2022badmintondb,
+  title={Badmintondb: A badminton dataset for player-specific match analysis and prediction},
+  author={Ban, Kar-Weng and See, John and Abdullah, Junaidi and Loh, Yuen Peng},
+  booktitle={Proceedings of the 5th International ACM Workshop on Multimedia Content Analysis in Sports},
+  pages={47--54},
+  year={2022},
+  abbr = {MMSports},
+  doi = {10.1145/3552437.3555696},
+  preview = "badmintondb.jpg",
+  abstract = {This paper introduces BadmintonDB, a new badminton dataset for training models for player-specific match analysis and prediction tasks, which are interesting challenges. The dataset features rally, strokes, and outcome annotations of 9 real-world badminton matches between two top players. We discussed our methodologies and processes behind selecting and annotating the matches. We also proposed player-independent and player-dependent Naive Bayes baselines for rally outcome prediction. The paper concludes with the analysis performed on the experiments to study the effects of player-dependent model on the prediction performances. We released our dataset at https://github.com/kwban/badminton-db.},
+  url = {https://dl.acm.org/doi/abs/10.1145/3552437.3555696},
+  dataset = {https://github.com/kwban/badminton-db}
+}
+
+@inproceedings{liong2022mtsn,
+  title={Mtsn: A multi-temporal stream network for spotting facial macro-and micro-expression with hard and soft pseudo-labels},
+  author={Liong, Gen Bing and Liong, Sze-Teng and See, John and Chan, Chee-Seng},
+  booktitle={Proceedings of the 2nd Workshop on Facial Micro-Expression: Advanced Techniques for Multi-Modal Facial Expression Analysis},
+  pages={3--10},
+  year={2022},
+  doi = {10.1145/3552465.3555040},
+  abstract = {This paper considers the challenge of spotting facial macro- and micro-expression from long videos. We propose the multi-temporal stream network (MTSN) model that takes two distinct inputs by considering the different temporal information in the facial movement. We also introduce a hard and soft pseudo-labeling technique to enable the network to distinguish expression frames from non-expression frames via the learning of salient features in the expression peak frame. Consequently, we demonstrate how a single output from the MTSN model can be post-processed to predict both macro- and micro-expression intervals. Our results outperform the MEGC 2022 baseline method significantly by achieving an overall F1-score of 0.2586 and also did remarkably well on the MEGC 2021 benchmark with an overall F1-score of 0.3620 and 0.2867 on CAS(ME)2 and SAMM Long Videos, respectively.},
+  preview = "pseudo-labeling.jpg",
+  abbr = {FME @ MM},
+  url = {https://dl.acm.org/doi/abs/10.1145/3552465.3555040},
+  code = {https://github.com/genbing99/MTSN-Spot-ME-MaE},
+  selected = {true}
+}
+
+@inproceedings{zhang2022blumnet,
+  title={BlumNet: Graph component detection for object skeleton extraction},
+  author={Zhang, Yulu and Sang, Liang and Grzegorzek, Marcin and See, John and Yang, Cong},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={5527--5536},
+  year={2022},
+  doi = {10.1145/3503161.3547816},
+  abstract = {In this paper, we present a simple yet efficient framework, BlumNet, for extracting object skeletons in natural images and binary shapes. With the need for highly reliable skeletons in various multimedia applications, the proposed BlumNet is distinguished in three aspects: (1) The inception of graph decomposition and reconstruction strategies further simplifies the skeleton extraction task into a graph component detection problem, which significantly improves the accuracy and robustness of extracted skeletons. (2) The intuitive representation of each skeleton branch with multiple structured and overlapping line segments can effectively prevent the skeleton branch vanishing problem. (3) In comparison to traditional skeleton heatmaps, our approach directly outputs skeleton graphs, which is more feasible for real-world applications. Through comprehensive experiments, we demonstrate the advantages of BlumNet: significantly higher accuracy than the state-of-the-art AdaLSN (0.826 vs. 0.786) on the SK1491 dataset, a marked improvement in robustness on mixed object deformations, and also a state-of-the-art performance on binary shape datasets (e.g. 0.893 on the MPEG7 dataset).},
+  preview = "blumnet.jpg",
+  url = {https://dl.acm.org/doi/abs/10.1145/3503161.3547816},
+  abbr = {MM}
 }
 
 @article{yang2023skeleton,
