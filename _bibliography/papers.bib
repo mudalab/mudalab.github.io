@@ -328,7 +328,7 @@
 
 @article{gan2022needle,
   title={Needle in a Haystack: Spotting and recognising micro-expressions “in the wild”},
-  author={See, John and Khor, Huai-Qian and Liu, Kun-Hong and Liong, Sze-Teng},
+  author={Gan, Y.S. and See, John and Khor, Huai-Qian and Liu, Kun-Hong and Liong, Sze-Teng},
   journal={Neurocomputing},
   volume={503},
   pages={283--298},
@@ -339,6 +339,20 @@
   preview = "needle-meview.jpg",
   doi = {10.1016/j.neucom.2022.06.101},
   abbr = {NeuComp},
+}
+
+@inproceedings{fan2022speed,
+  title={Speed up object detection on gigapixel-level images with patch arrangement},
+  author={Fan, Jiahao and Liu, Huabin and Yang, Wenjie and See, John and Zhang, Aixin and Lin, Weiyao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4653--4661},
+  year={2022},
+  doi = {10.1109/CVPR52688.2022.00461},
+  preview = "patch-tree-decoder.jpg",
+  abstract = {With the appearance of super high-resolution (e.g., gigapixel-level) images, performing efficient object detection on such images becomes an important issue. Most existing works for efficient object detection on high-resolution images focus on generating local patches where objects may exist, and then every patch is detected independently. However, when the image resolution reaches gigapixel-level, they will suffer from a huge time cost for detecting numerous patches. Different from them, we devise a novel patch arrangement framework for fast object detection on gigapixel-level images. Under this framework, a Patch Arrangement Network (PAN) is proposed to accelerate the detection by determining which patches could be packed together into a compact canvas. Specifically, PAN consists of (1) a Patch Filter Module (PFM) (2) a Patch Packing Module (PPM). PFM filters patch candidates by learning to select patches between two granularities. Subsequently, from the remaining patches, PPM determines how to pack these patches together into a smaller number of canvases. Meanwhile, it generates an ideal layout of patches on canvas. These canvases are fed to the detector to get final results. Experiments show that our method could improve the inference speed on gigapixel-level images by 5 times while maintaining great performance.},
+  url = {https://openaccess.thecvf.com/content/CVPR2022/html/Fan_Speed_Up_Object_Detection_on_Gigapixel-Level_Images_With_Patch_Arrangement_CVPR_2022_paper.html},
+  abbr = {CVPR},
+  selected = {true}
 }
 
 @article{yang2023skeleton,
