@@ -295,6 +295,52 @@
   abbr = {MM}
 }
 
+@inproceedings{liu2022task,
+  title={Task-adaptive spatial-temporal video sampler for few-shot action recognition},
+  author={Liu, Huabin and Lv, Weixian and See, John and Lin, Weiyao},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={6230--6240},
+  year={2022},
+  preview = "task-adaptive.jpg",
+  doi = {10.1145/3503161.354793},
+  abstract = {A primary challenge faced in few-shot action recognition is inadequate video data for training. To address this issue, current methods in this field mainly focus on devising algorithms at the feature level while little attention is paid to processing input video data. Moreover, existing frame sampling strategies may omit critical action information in temporal and spatial dimensions, which further impacts video utilization efficiency. In this paper, we propose a novel video frame sampler for few-shot action recognition to address this issue, where task-specific spatial-temporal frame sampling is achieved via a temporal selector (TS) and a spatial amplifier (SA). Specifically, our sampler first scans the whole video at a small computational cost to obtain a global perception of video frames. The TS plays its role in selecting top-T frames that contribute most significantly and subsequently. The SA emphasizes the discriminative information of each frame by amplifying critical regions with the guidance of saliency maps. We further adopt task-adaptive learning to dynamically adjust the sampling strategy according to the episode task at hand. Both the implementations of TS and SA are differentiable for end-to-end optimization, facilitating seamless integration of our proposed sampler with most few-shot action recognition methods. Extensive experiments show a significant boost in the performances on various benchmarks including long-term videos.},
+  url = {https://dl.acm.org/doi/abs/10.1145/3503161.3547938},
+  code = {https://github.com/R00Kie-Liu/Sampler},
+  abbr = {MM}
+}
+
+@inproceedings{li2022ta2n,
+  title={Ta2n: Two-stage action alignment network for few-shot action recognition},
+  author={Li, Shuyuan and Liu, Huabin and Qian, Rui and Li, Yuxi and See, John and Fei, Mengjuan and Yu, Xiaoyuan and Lin, Weiyao},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={36},
+  number={2},
+  pages={1404--1411},
+  year={2022},
+  doi = {10.1609/aaai.v36i2.20029},
+  preview = "ta2n.jpg",
+  url = {https://ojs.aaai.org/index.php/AAAI/article/view/20029},
+  abstract = {Few-shot action recognition aims to recognize novel action classes (query) using just a few samples (support). The majority of current approaches follow the metric learning paradigm, which learns to compare the similarity between videos. Recently, it has been observed that directly measuring this similarity is not ideal since different action instances may show distinctive temporal distribution, resulting in severe misalignment issues across query and support videos. In this paper, we arrest this problem from two distinct aspects--action duration misalignment and action evolution misalignment. We address them sequentially through a Two-stage Action Alignment Network (TA2N). The first stage locates the action by learning a temporal affine transform, which warps each video feature to its action duration while dismissing the action-irrelevant feature (eg background). Next, the second stage coordinates query feature to match the spatial-temporal action evolution of support by performing temporally rearrange and spatially offset prediction. Extensive experiments on benchmark datasets show the potential of the proposed method in achieving state-of-the-art performance for few-shot action recognition.},
+  abbr = {AAAI},
+  code = {https://github.com/R00Kie-Liu/TA2N},
+  selected = {true}
+}
+
+@article{gan2022needle,
+  title={Needle in a Haystack: Spotting and recognising micro-expressions “in the wild”},
+  author={See, John and Khor, Huai-Qian and Liu, Kun-Hong and Liong, Sze-Teng},
+  journal={Neurocomputing},
+  volume={503},
+  pages={283--298},
+  year={2022},
+  publisher={Elsevier},
+  abstract = {Computational research on facial micro-expressions has long focused on videos captured under constrained laboratory conditions due to the challenging elicitation process and limited samples that are publicly available. Moreover, processing micro-expressions is extremely challenging under unconstrained scenarios. This paper introduces, for the first time, a completely automatic micro-expression “spot-and-recognize” framework that is performed on in-the-wild videos, such as in poker games and political interviews. The proposed method first spots the apex frame from a video by handling head movements and unconscious actions which are typically larger in motion intensity, with alignment employed to enforce a canonical face pose. Optical flow guided features play a central role in our method: they can robustly identify the location of the apex frame, and are used to learn a shallow neural network model for emotion classification. Experimental results demonstrate the feasibility of the proposed methodology, establishing good baselines for both spotting and recognition tasks – ASR of 0.33 and F1-score of 0.6758 respectively on the MEVIEW micro-expression database. In addition, we present comprehensive qualitative and quantitative analyses to further show the effectiveness of the proposed framework, with new suggestion for an appropriate evaluation protocol. In a nutshell, this paper provides a new benchmark for apex spotting and emotion recognition in an in-the-wild setting.},
+  url = {https://www.sciencedirect.com/science/article/abs/pii/S0925231222008323},
+  preview = "needle-meview.jpg",
+  doi = {10.1016/j.neucom.2022.06.101},
+  abbr = {NeuComp},
+}
+
 @article{yang2023skeleton,
   title={Skeleton Ground Truth Extraction: Methodology, Annotation Tool and Benchmarks},
   author={Yang, Cong and Indurkhya, Bipin and See, John and Gao, Bo and Ke, Yan and Boukhers, Zeyd and Yang, Zhenyu and Grzegorzek, Marcin},
