@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: emobot
+description: Emotional Sensing for Improving User Engagement in Human-Robot Interaction
+img: assets/img/humanoid.jpg
 importance: 2
 category: research
+publications: 'projects^=*emobot'
 ---
 
 Every project has a beautiful feature showcase page.

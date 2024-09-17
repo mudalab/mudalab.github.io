@@ -3,6 +3,7 @@ layout: page
 title: avalon
 description: Autonomous Aerial-based Visual Monitoring of Wind Turbine Blade Surface Defects
 importance: 1
+img: assets/img/windturbines.jpg
 category: research
 publications: 'projects^=*avalon'
 ---

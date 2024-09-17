@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: emocon
+description: Efficient Multimodal Architectures for Emotional State Prediction in Naturalistic Conversations
+img: assets/img/videocall.jpg
 importance: 3
 category: research
+publications: 'projects^=*emocon'
 ---
 
 Every project has a beautiful feature showcase page.
