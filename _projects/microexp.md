@@ -1,11 +1,11 @@
 ---
 layout: page
-title: emobot
-description: Emotional Sensing for Improving User Engagement in Human-Robot Interaction
-img: assets/img/humanoid.jpg
-importance: 3
+title: microexp
+description: Facial Micro-expression Analysis 
+importance: 1
+img: assets/img/microexp.jpg
 category: research
-publications: 'projects^=*emobot'
+publications: 'projects^=*microexp'
 ---
 
 Every project has a beautiful feature showcase page.
@@ -79,3 +79,8 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+<h3>Related Publications</h3>
+<div class="publications">
+    {% bibliography -f papers -q @*[{{page.publications}}]* %}
+</div>

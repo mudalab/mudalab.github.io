@@ -3,7 +3,7 @@ layout: page
 title: emocon
 description: Efficient Multimodal Architectures for Emotional State Prediction in Naturalistic Conversations
 img: assets/img/videocall.jpg
-importance: 3
+importance: 4
 category: research
 publications: 'projects^=*emocon'
 ---
