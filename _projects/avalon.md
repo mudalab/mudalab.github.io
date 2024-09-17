@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: avalon
+description: Autonomous Aerial-based Visual Monitoring of Wind Turbine Blade Surface Defects
 importance: 1
-category: work
+category: research
+publications: 'projects^=*avalon'
 ---
 
 Every project has a beautiful feature showcase page.
@@ -78,3 +78,8 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+<h3>Related Publications</h3>
+<div class="publications">
+    {% bibliography -f papers -q @*[{{page.publications}}]* %}
+</div>
